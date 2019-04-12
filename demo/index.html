@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KNN PC4</title>
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: black;
+    }
+
+    .footer-text {
+        max-width: 600px;
+        text-align: center;
+        margin: auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .footer-text, .dg {
+        display: none;
+      }
+    }
+
+    body {
+        background-color: cadetblue;
+    }
+
+    #video {
+        height: 600px;
+        width: 600px;
+        background-color: white;
+        margin: 10px;
+        float: left;
+    }
+
+    .profile {
+        width: 230px;
+        /* height: 300px; */
+        float: left;
+        margin: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: cornflowerblue;
+    }
+
+    .name {
+        font-size: 40px;
+        text-align: center;
+        width: 100%;    
+    }
+
+    .picture {
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        margin-bottom: 15px; 
+    }
+
+    .exemplos {
+        width: 100%;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .selected {
+        background-color: green;
+    }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="info" style='display:none'>
+    </div>
+    <div id="loading">
+        Carregando modelo...
+    </div>
+
+    <div id='main' style='display:none'>
+        <video id="video" playsinline style=" -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        ">
+        </video>
+    </div>
+    <!-- <div id="video"></div> -->
+    <div class="profile" id="profile0">
+        <div id="exemplos0" class="exemplos">0 exemplos</div>
+        <canvas class="picture" id="pessoa0"></canvas>
+        <div class="name">1</div>
+    </div>
+    <div class="profile" id="profile1">
+        <div id="exemplos1" class="exemplos">0 exemplos</div>
+        <canvas class="picture" id="pessoa1"></canvas>
+        <div class="name">2</div>
+    </div>
+    <div class="profile" id="profile2">
+        <div id="exemplos2" class="exemplos">0 exemplos</div>
+        <canvas class="picture" id="pessoa2"></canvas>
+        <div class="name">3</div>
+    </div>
+    <div class="profile" id="profile3">
+        <div id="exemplos3" class="exemplos">0 exemplos</div>
+        <canvas class="picture" id="pessoa3"></canvas>
+        <div class="name">4</div>
+    </div>
+    <div class="profile" id="profile4">
+        <div id="exemplos4" class="exemplos">0 exemplos</div>
+        <canvas class="picture" id="pessoa4"></canvas>
+        <div class="name">5</div>
+    </div>
+    <canvas id="teste">
+
+    </canvas>
+    <script src="camera.js"></script>
+</body>
+
+</html>
